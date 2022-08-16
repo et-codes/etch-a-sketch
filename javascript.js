@@ -40,20 +40,19 @@ const resetGrid = (event) => {
 };
 
 const getGridSize = (event) => {
-  const size = prompt('Enter number of squares per side (100 max)');
-  if (size <= 100) {
+  const size = prompt('Enter number of squares per side (1 - 100)');
+  if (size >= 1 && size <= 100) {
     createGrid(size);
   } else {
-    alert('Please enter a size less than or equal to 100.')
+    alert('Please enter a size between 1 and 100.');
     getGridSize();
   }
 };
 
 const app = () => {
   createGrid(16);
-
   document.getElementById('reset').addEventListener('click', resetGrid);
   document.getElementById('new-grid').addEventListener('click', getGridSize);
-}
+};
 
 app();
