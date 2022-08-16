@@ -7,8 +7,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(43, 53, 107);
-  color: rgb(103, 176, 236);
+  background: red;
+  color: gold;
 }
 
 .container {
@@ -20,7 +20,8 @@ body {
 
 h1 {
   margin-bottom: 0px;
-  font-family: "Rokkitt", serif;
+  font-family: "Arizonia", cursive;
+  font-size: 48px;
 }
 
 .squares {
@@ -28,15 +29,15 @@ h1 {
 }
 
 .buttons {
-  background: rgb(30, 37, 77);
-  padding: 16px;
+  border: 2px solid gold;
+  padding: 12px;
   margin: 16px;
   border-radius: 16px;
 }
 
 button {
-  color: rgb(103, 176, 236);
-  background: rgb(43, 53, 107);
+  color: black;
+  background: white;
   border: none;
   font-size: 16px;
   padding: 8px;
@@ -46,8 +47,8 @@ button {
 }
 
 button:hover {
-  background: rgb(103, 176, 236);
-  color: rgb(43, 53, 107);
+  background: black;
+  color: white;
 }
 
 footer {
@@ -55,7 +56,7 @@ footer {
 }
 
 a {
-  color: rgb(103, 176, 236);
+  color: gold;
   text-decoration: none;
 }
 

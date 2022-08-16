@@ -1,10 +1,7 @@
 const handleMouseOver = (event) => {
   const square = event.target;
-  if (square.style.backgroundColor === 'black') {
-    const rand = () => Math.random() * 255;
-    square.style.backgroundColor = `rgb(${rand()}, ${rand()}, ${rand()})`;
-  } else if (square.style.opacity !== '0') {
-    square.style.opacity = String(Number(square.style.opacity) - 0.1);
+  if (square.style.opacity !== '0') {
+    square.style.opacity = String(Number(square.style.opacity) - 0.2);
   }
 };
 
@@ -25,7 +22,7 @@ const createGrid = (size) => {
     gridSquare.id = String(i);
     gridSquare.style.height = `${squareSize}px`;
     gridSquare.style.width = `${squareSize}px`;
-    gridSquare.style.backgroundColor = 'black';
+    gridSquare.style.backgroundColor = 'silver';
     gridSquare.style.opacity = '1';
     gridSquare.addEventListener('mouseover', handleMouseOver);
     div.appendChild(gridSquare);
@@ -34,7 +31,7 @@ const createGrid = (size) => {
 
 const resetGrid = (event) => {
   document.querySelectorAll('.squares').forEach(square => {
-    square.style.background = 'black';
+    square.style.background = 'silver';
     square.style.opacity = '1';
   });
 };
@@ -50,7 +47,7 @@ const getGridSize = (event) => {
 };
 
 const app = () => {
-  createGrid(16);
+  createGrid(32);
   document.getElementById('reset').addEventListener('click', resetGrid);
   document.getElementById('new-grid').addEventListener('click', getGridSize);
 };
