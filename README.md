@@ -5,3 +5,5 @@ squares reduces their opacity.
 
 **New Grid**: Enter how many squares you want on each side of the canvas.  
 **Reset**: Clears the canvas.
+
+Preview page: https://et-codes.github.io/etch-a-sketch/
