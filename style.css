@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 650px;
-  border: 1px solid rgb(30, 37, 77);
   background: black;
 }
 
@@ -25,7 +24,6 @@ h1 {
 }
 
 .squares {
-  /* border: 1px solid rgb(30, 37, 77); */
   box-sizing: border-box;
 }
 
